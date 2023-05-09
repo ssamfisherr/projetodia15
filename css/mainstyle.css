@@ -1,0 +1,106 @@
+html, body{
+   margin: 0;
+   padding: 0; 
+   scroll-behavior: smooth;
+   background: #000000;
+   color: #fff;
+   height: 100%;
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    height: 120px;
+}
+#texto1{
+    background: #fff;
+    color: #000;
+    height: 50px;
+    width: 100%;
+    display: block;
+    text-align: center;
+    padding: 0px 0px;
+}
+#logo{
+    margin: 0px 0px 0px 0px;
+    background: #a9bcd0;
+    display: flex;
+    align-items: center;
+    height: 110px;
+}
+#logo img{
+    width: 35px;
+}
+
+#barrapesquisa{
+    height: 40px;
+    background: #ffffff;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 15px;
+}
+
+#barrapesquisa input{
+    border: none;
+    background: none;
+    outline: none;
+    padding: 0;
+    color: #000;
+    font-size: 16px;
+    line-height: 40px;
+    width: 0;
+    transition: 0.5s;
+}
+
+#barrapesquisa a{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #fffefe;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#barrapesquisa img{ width: 20px; }
+
+#barrapesquisa:hover > input{
+    width: 240px;
+    padding: 0 10px;
+}
+
+
+nav{
+    background-color: #fff;
+    padding: 10px 0;
+    box-shadow: #bdbdbd 0px 5px 5px 0px;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    margin: 0;
+}
+
+nav ul li a{
+    color: #000;
+    font-size: 16px;
+}
+
+nav ul li a:hover{
+    text-decoration: none;
+    color: #000;
+}
+
+#imagem-topo{
+    background-image: url(../imgs/fundo.jpg);
+    background-repeat: no-repeat;
+    background-position: center -260;
+    width: 100%;
+    min-height: 800px;
+    background-size: cover;
+    background-attachment: fixed;
+}
