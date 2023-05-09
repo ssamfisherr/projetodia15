@@ -2,21 +2,25 @@ html, body{
    margin: 0;
    padding: 0; 
    scroll-behavior: smooth;
-   background: #000000;
    color: #fff;
    height: 100%;
+   background-image: url(../imgs/fundo.jpg);
+   background-repeat: no-repeat;
+   background-position: center ;
+   width: 100%;
+   background-size: cover;
+   background-attachment: fixed;
 }
-
 header{
     position: fixed;
     width: 100%;
-    height: 120px;
+    display: flex;
+    flex-direction: column;
 }
 #texto1{
     background: #fff;
     color: #000;
-    height: 50px;
-    width: 100%;
+    height: 40px;
     display: block;
     text-align: center;
     padding: 0px 0px;
@@ -26,7 +30,9 @@ header{
     background: #a9bcd0;
     display: flex;
     align-items: center;
-    height: 110px;
+    justify-content: center;
+    height: 120px;
+    width: 100%
 }
 #logo img{
     width: 35px;
@@ -96,11 +102,16 @@ nav ul li a:hover{
 }
 
 #imagem-topo{
-    background-image: url(../imgs/fundo.jpg);
-    background-repeat: no-repeat;
-    background-position: center -260;
-    width: 100%;
+    min-height: 600px;
+}
+
+main{
     min-height: 800px;
-    background-size: cover;
-    background-attachment: fixed;
+    background-color: #000;
+    margin: auto;
+    width: 85%;
+}
+
+footer{
+    display: none;
 }
