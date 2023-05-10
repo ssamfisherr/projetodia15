@@ -152,32 +152,36 @@ h1{
 .produtos{
    display: inline-flex;
 }
-.produtos article img:nth-child(1){
-    width: 150px;
-}
 
 .produtos article{
+    box-sizing: border-box;
     width: 230px;
     height: 450px;
-    margin: 0 15px 20px 0;
+    margin: 0 15px 20px 0; /*margem de foca da caixa dos produtos*/
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
     background: #ffffff;
     border-radius: 15px;
 }
 
-
-
-.valorprodutos{
-    display: block;
-    background: #fff;
+.produtos article img:nth-child(1){
+    width: 150px;
+    margin-top: 35px;
+    margin-bottom: 35px;
 }
 
+.produtos article h3{
+    text-align: start;
+    padding-left: 5%;
+}
+
+.estrelas{
+    background: #000;
+
+}
 .estrelas img{
-    width: 100px;
-    height: 30px;
+    
 }
 
 
