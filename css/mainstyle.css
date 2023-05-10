@@ -191,7 +191,23 @@ h1{
 
 .infoproduto>div{
     margin-bottom: 10px;
+}
 
+.produtos>article>span{
+    padding-left: 5%;
+}
+
+.produtos>article>span:nth-child(3){
+    text-decoration: line-through;
+    font-size:15px;
+    color: #6969698e;
+}
+.produtos>article>span:nth-child(4){
+    font-size: 20px;
+    font-weight: bolder;
+}
+.produtos>article>span:nth-child(5){
+    font-size:15px;
 }
 footer{
     display: none;
