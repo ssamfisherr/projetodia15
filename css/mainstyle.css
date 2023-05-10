@@ -128,7 +128,7 @@ main{
     color: #000;
 }
 
-main span:nth-child(1){
+main>span:nth-child(1){
     margin-top: 5px;
     display: flex;
     justify-content: center;
@@ -159,32 +159,40 @@ h1{
     height: 450px;
     margin: 0 15px 20px 0; /*margem de foca da caixa dos produtos*/
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: column;
     background: #ffffff;
     border-radius: 15px;
 }
 
-.produtos article img:nth-child(1){
+.imagem-produto{
     width: 150px;
+    height: 230px;
     margin-top: 35px;
-    margin-bottom: 35px;
+    align-self: center;
+    margin-bottom: 40px;
 }
-
-.produtos article h3{
+.infoproduto h3{
     text-align: start;
     padding-left: 5%;
+    margin-bottom: 10px;
 }
 
-.estrelas{
-    background: #000;
+.avaliação-imagem{
+    width: 70px;
+    height: 15px;
+    padding-left: 5%;
+    margin-right: 5px;
+}
+
+.infoproduto{
+  display: flex;
+  flex-direction: column;
+}
+
+.infoproduto>div{
+    margin-bottom: 10px;
 
 }
-.estrelas img{
-    
-}
-
-
 footer{
     display: none;
 }
