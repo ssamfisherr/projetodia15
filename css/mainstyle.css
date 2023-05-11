@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Press+Start+2P&display=swap');
+
+
+
+
+
 *{
     margin: 0;
     padding: 0;
@@ -18,7 +24,8 @@ header{
     background: #fff;
     color: #000;
     height: 40px;
-    display: block;
+    display: flex;
+    justify-content: center;
     text-align: center;
     font-size: 30px;
 }
@@ -29,13 +36,15 @@ header{
     grid-template-rows: 120px;
     color: #000;  
     align-items: center;
-    background: #dfaeff;
+    background: #A09EBB;
 }
 
 #parte-esquerda-topo span{
     display: block;
-    font-size: 20px;
+    font-size: 40px;
     margin: 0px 0px 0px 30px;
+    text-transform: uppercase;
+    font-family: 'Abril Fatface family';
 }
 
 #parte-esquerda-topo img{
@@ -71,18 +80,22 @@ header{
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background: #fffefe;
+    background: #A09EBB;
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: 0.5s;
 }
-#barrapesquisa img{ width: 20px; margin: 0;}
+#barrapesquisa img{ width: 20px; margin: 0; }
 
 #barrapesquisa:hover > input{
     width: 240px;
     padding: 0 10px;
 }
 
+#barrapesquisa:hover > a{
+    background: #ffffff;
+}
 #parte-direita-topo{
     display: flex;
     align-items: center;
@@ -134,9 +147,10 @@ main>span:nth-child(1){
     justify-content: center;
     align-content: center;
     width: 100%;
-    background: #dfaeff;
+    background: #FAFFD8;
     height: 40px;
     font-size: 30px;
+    border-radius: 20px;
 }
 h1{
     margin-left: 20px;
