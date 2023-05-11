@@ -102,19 +102,35 @@ header{
 }
 
 #barrapesquisa:hover > a{ background: #ffffff; }
+
 #parte-direita-topo{
     display: flex;
     align-items: center;
     justify-content: end;
 }
 .iconetopo img:nth-child(1){ margin: 0px 10px 0px 0px; }
-.iconetopo img:nth-child(2){ margin: 0px 0px 0px 0px; }
+.iconetopo img:nth-child(2){ margin: 0px 0px 10px 0px; }
 
 #login img{margin: 0px 15px 0px 10px;}
+
 #login a{
     display: flex;
     align-items: center;
     margin: 0px 80px 0px 0px;
+    transition: 0.5s;
+}
+#login a>figcaption{
+    transition: 0.5s;
+}
+#login a>figcaption:hover{
+    color: #e253e2;
+}
+#login a:link{
+    color: #000000;
+}
+
+#login a:visited{
+    color: #000;
 }
 nav{
     background-color: #fff;
