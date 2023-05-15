@@ -173,7 +173,7 @@ nav ul li a:hover{
     .iconetopo{ display: flex; }
 
     #parte-direita-topo{ 
-        margin-left: 32%;
+        margin-left: 27%;
         margin-bottom: 8px
     }
 
@@ -189,20 +189,26 @@ nav ul li a:hover{
        flex-direction: column;
     }
 
-    #parte-esquerda-topo > img{
-        width: 50px;
+    #parte-esquerda-topo > a img{
+        width: 70px;
+        margin-left: 0;
     }
 
     #barrapesquisa{
         background: #fff;
         margin-bottom: 10px;
         margin-top: 10px;
-        width:100%;
+        margin-left: 0;
+        width: 100%;
         padding-left: 8px;
-        
+          
     }
 
-    #barrapesquisa input{ width: 100% }
+    #barrapesquisa > input{
+        pointer-events: none;
+        width: 100%;
+    }
+
 
     #barrapesquisa a{ background-color: transparent; }
 
@@ -281,20 +287,6 @@ nav ul li a:hover{
  
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
