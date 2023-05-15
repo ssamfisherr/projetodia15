@@ -23,6 +23,8 @@ html, body{
    background: #dfdfdf;
    width: 100%;
 }
+
+
 header{
     position: fixed;
     width: 100%;
@@ -31,11 +33,12 @@ header{
 #texto1{
     background: #fff;
     color: #000;
-    height: 40px;
     display: flex;
     justify-content: center;
     text-align: center;
     font-size: 30px;
+    padding-top: 3px;
+    padding-bottom: 5px;
 }
 
 #meiotopo{
@@ -68,7 +71,6 @@ header{
     border-radius: 40px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
     margin: 0px 0px 0px 30px;
 }
 
@@ -157,43 +159,181 @@ nav ul li a:hover{
 
 #imagem-topo{min-height: 200px;}
 
+/*@MEDIA DO HEADER/]*/
+@media screen and (max-width: 767px){
+
+    html, body{ margin: 0; padding: 0; }
+
+    #login > a > figcaption{ display: none; }
+
+    header > nav{ display: none; }
+
+    #parte-esquerda-topo > span{ display: none; }
+
+    .iconetopo{ display: flex; }
+
+    #parte-direita-topo{ 
+        margin-left: 32%;
+        margin-bottom: 8px
+    }
+
+    #meiotopo{
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #parte-esquerda-topo{
+       display: flex;
+       flex-direction: column;
+    }
+
+    #parte-esquerda-topo > img{
+        width: 50px;
+    }
+
+    #barrapesquisa{
+        background: #fff;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        width:100%;
+        padding-left: 8px;
+        
+    }
+
+    #barrapesquisa input{ width: 100% }
+
+    #barrapesquisa a{ background-color: transparent; }
+
+
+
+
+
+
+
+}
+
+.menu-lateral{
+    display: none;
+}
+/* @ MEDIA do menu lateral*/
+@media screen and (max-width: 767px){
+
+    .menu-lateral{
+        display: block;
+        width: 9%;
+        height: 4%;
+        background-color: transparent;
+        padding: 5px 0px 0px 1%;
+
+        position: fixed;
+        overflow: hidden;
+        transition: 0.5s;
+    }
+
+    .menu-lateral:hover{
+        width: 40%;
+        height: 40%;
+        box-shadow: 3px 3px 0 #000000e7;
+        background-color: #ffffffef;
+    }
+
+    .btn-expandir{
+        width: 100%;
+        padding-left: 3px;
+    }
+
+    .btn-expandir > i{
+        color: #000000;
+        font-size: 24px;
+        cursor: pointer;
+    }
+
+    .menu-lateral > ul{
+        height: 100%;
+        list-style-type: none;
+    }
+
+    ul li.item-menu{
+        transition: 0.5s;
+    }
+    ul li.item-menu:hover{ background: #4267b3; }
+
+    ul li.item-menu a{
+        color: #000;
+        text-decoration: none;
+        font-size: 20px;
+        padding: 20px 4%;
+        display: flex;
+        margin-bottom: px;
+        /*line-height: 40px;*/
+    }
+
+    ul li.item-menu a .txt-link{
+        margin-left: 8px;
+    }
+    /*tamanho icone*/
+ 
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 main{
     margin: auto;
-    width: 1245px;
+    width: 70%;
     color: #000;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 main>span:nth-child(1){
-    margin-top: 5px;
+    margin-top: 20px;
     display: flex;
     justify-content: center;
     align-content: center;
     width: 100%;
     background: #FAFFD8;
-    height: 40px;
     font-size: 30px;
     border-radius: 20px;
+    padding-top: ;
+    padding-bottom: 3px;
 }
 h1{
     margin-left: 20px;
     padding-bottom: 10px;
     font-size: 25pt;
+    width: 100%;
 }
 #item1{
     margin-top: 30px;
-    width: 100%;
-    height: 100%;
-}
-
-.produtos{
-   display: inline-flex;
+    display: flex;
+    flex-wrap: wrap;
+    
 }
 
 .produtos article{
     box-sizing: border-box;
-    width: 230px;
+    width: 240px;
     height: 450px;
-    margin: 0 15px 20px 0; /*margem de foca da caixa dos produtos*/
+    margin-bottom: 20px;
+    margin-left: 20px;
     display: flex;
     flex-direction: column;
     background: #ffffff;
@@ -245,6 +385,64 @@ h1{
 .produtos>article>span:nth-child(5){
     font-size:15px;
 }
+
+#item2, #item3, #item4, #item5{
+    margin-top: 60px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#item5{
+    margin-bottom: 60px;
+}
+
+
+
+@media screen and (max-width: 767px) {
+ 
+    #texto1{
+        font-size: 15px;
+        display: flex;
+        align-items: center;
+        padding: 0px 20px;
+        display: none;
+    }
+
+    main{
+        margin: auto;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    main>span:nth-child(1){
+        display: flex;
+        flex-direction: ;
+        font-size: 20px;
+        margin: 0;
+        padding: 10px 20px;
+    }
+
+    #item1, #item2, #item3, #item4, #item5{
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        
+        
+        
+    }
+
+    h1{
+        font-size: 25px;
+    }
+
+    .produtos article{
+        margin: 0;
+        margin-bottom: 30px;
+    }
+
+}
+
 footer {
     width: 100%;
     color: #fff; /*cor das letras 'categoria','colaboradores'*/
