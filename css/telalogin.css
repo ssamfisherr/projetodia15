@@ -1,0 +1,91 @@
+body {
+    font-family: sans-serif;
+  }
+main{
+    width: 50%;
+}
+
+#imagem-topo{
+    background-image: url(../imgs/fundo.jpg);
+    background-repeat: no-repeat;
+    background-position: center -260;
+    width: 100%;
+    min-height: 800px;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#logintela{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 80vh;
+    background: transparent;
+    
+}
+.campologin{
+    width: 100%;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#logintela .campologin .login{
+    background: #ffffff;
+    border-radius: 30px;
+    padding: 40px;
+}
+  
+.cadastro{
+    background: #ffffff;
+    border-radius: 30px;
+    padding: 40px;
+}
+  
+h1 {
+    text-align: center;
+    color: #333333;
+}
+  
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+  
+input[type="text"],
+input[type="password"] {
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid #CCCCCC;
+    font-size: 16px;
+    background: none;
+    outline: none;
+}
+  
+input[type="text"]::placeholder,
+input[type="password"]::placeholder {
+    color: #AAAAAA;
+}
+  
+button[type="submit"] {
+    padding: 10px;
+    background: #9121f3;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+  
+button[type="submit"]:hover {
+    background: #1976D2;
+}
+  
+button{
+    display: flex;
+    border-radius: 30px;
+    padding: 5px;
+    border-width: 4px;
+    margin-bottom:1000 px;
+}
+  
